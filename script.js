@@ -3,8 +3,8 @@ document.body.addEventListener("click", function(event) {
   const flower = document.createElement("div");
   flower.className = "flower";
 
-  flower.style.left = '${event.clientX - 10}px';
-  flower.style.top = '${event.clientY - 10}px';
+  flower.style.left = `${event.clientX - 10}px`;
+  flower.style.top = `${event.clientY - 10}px`;
 
   document.body.appendChild(flower);
 
