@@ -1,7 +1,7 @@
 document.body.addEventListener("click", function(event) {
   console.log("You clicked at:", event.clientX, event.clientY);
   const flower = document.createElement("img");
-  const n = Math.floor(Math.random() * 4);
+  const r = Math.floor(Math.random() * 4);
   if (r === 3 ) {
   flower.src = "images/pngwing.com-2.png"; 
   } else if (r === 3) {
