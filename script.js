@@ -1,14 +1,15 @@
 document.body.addEventListener("click", function(event) {
-  const flower = document.createElement("img");
-  flower.src = "images/flower.png"; // adjust path if needed
+  // Create the flower
+  const flower = document.createElement("div");
   flower.className = "flower";
 
-  // Position at click (offset by half size)
-  flower.style.left = `${event.clientX - 25}px`;
-  flower.style.top = `${event.clientY - 25}px`;
+  // Position the flower at the click location
+  flower.style.left = `${event.clientX - 10}px`;
+  flower.style.top = `${event.clientY - 10}px`;
 
+  // Add it to the page
   document.body.appendChild(flower);
 
-  // Remove after animation
+  // Remove it after 2 seconds (cleanup)
   setTimeout(() => flower.remove(), 2000);
 });
