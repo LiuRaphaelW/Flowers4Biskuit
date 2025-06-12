@@ -2,51 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flower Garden</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: #e0f7fa; /* Set background color */
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .flower {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: radial-gradient(circle, pink 40%, transparent 60%);
-      border-radius: 50%;
-      animation: grow 1s ease-out forwards;
-      pointer-events: none;
-    }
-
-    @keyframes grow {
-      from {
-        transform: scale(0);
-        opacity: 0.3;
-      }
-      to {
-        transform: scale(3);
-        opacity: 1;
-      }
-    }
-  </style>
+  <title>My Site</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>
-    document.body.addEventListener("click", function(event) {
-      const flower = document.createElement("div");
-      flower.className = "flower";
-      flower.style.left = `${event.clientX - 10}px`;
-      flower.style.top = `${event.clientY - 10}px`;
-      document.body.appendChild(flower);
 
-      // Remove flower after animation ends to keep the page light
-      setTimeout(() => flower.remove(), 2000);
-    });
-  </script>
+  <h1>Click anywhere on the screen!</h1>
+
+  <!-- JavaScript at the end of body -->
+  <script src="script.js"></script>
 </body>
 </html>
