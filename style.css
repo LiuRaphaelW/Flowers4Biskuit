@@ -1,9 +1,11 @@
 .flower {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, pink 40%, transparent 60%);
+  border-radius: 50%;
   animation: grow 1s ease-out forwards;
+  pointer-events: none;
 }
 
 @keyframes grow {
@@ -12,7 +14,7 @@
     opacity: 0.3;
   }
   to {
-    transform: scale(1.5);
+    transform: scale(3);
     opacity: 1;
   }
 }
