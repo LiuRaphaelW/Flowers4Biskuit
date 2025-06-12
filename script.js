@@ -5,7 +5,7 @@ document.body.addEventListener("click", function(event) {
 
   flower.style.left = `${event.clientX - 10}px`;
   flower.style.top = `${event.clientY - 10}px`;
-
+  console.log("flower coord:", flower.style.left, flower.style.top);
   document.body.appendChild(flower);
 
 
